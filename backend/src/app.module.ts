@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { EventsModule } from './events/events.module';
+import { TasksModule } from './tasks/tasks.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { EventsModule } from './events/events.module';
     }),
     AuthModule,
     EventsModule,
+    TasksModule,
   ],
   controllers: [AppController],
   providers: [AppService],
